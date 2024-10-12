@@ -52,7 +52,7 @@ Run the main script to access the tool's functionalities:
 
 ### Main Menu Options
 
-* Gather Information: Scan for open ports and services, check if the server is using CloudFlare.
+* Ports: Scan for open ports.
  
 * Enumerate Domains: Gather domain names from a given domain.
  
@@ -64,7 +64,7 @@ Run the main script to access the tool's functionalities:
  
 * Crawl and Scan: Extract and list URLs from a provided URL.
  
-* Scan Headers: Run the header vulnerability scanner.
+* Missing Header Checks : Scan For Missing Headers.
  
 * RxSS: Execute the RxSS vulnerability scanner.
 
