@@ -1,4 +1,4 @@
-# BuCaG v5.0 - Advanced Penetration Testing Tool
+# BuCaG v1.0 - Advanced Penetration Testing Tool
 
 ![Python Version](https://img.shields.io/pypi/pyversions/your-package?label=Python%20Version)
 
