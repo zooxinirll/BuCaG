@@ -74,8 +74,15 @@ Run the main script to access the tool's functionalities:
  
 * Exit: Exit the tool.
 
-
+# Missing Header Checks 
 ![Header Checks](https://github.com/user-attachments/assets/0fb56244-6aec-4fdc-a0b7-bf24ee4a70e8)
+
+# LFI ( LocalFile Inclusion )
+
+
+![LFI](https://github.com/user-attachments/assets/2ab22364-c357-4d9d-9052-75c7b24f0305)
+
+
 
 ### 🌐 Connect With Me
 <p align="center"> <a href="https://github.com/zooxinirll" target="_blank"> <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /> </a> <a href="https://www.instagram.com/h3r.10c4lh0st.07?igsh=MTRqcGNsdmN3a2FyaA==" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /> </a></p>
