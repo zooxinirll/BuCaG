@@ -82,6 +82,10 @@ Run the main script to access the tool's functionalities:
 
 ![LFI](https://github.com/user-attachments/assets/2ab22364-c357-4d9d-9052-75c7b24f0305)
 
+# </>
+
+• lfi.txt : Source From github <a href=https://github.com/coffinxp/lostools/blob/main/payloads/lfi.txt>coffinxp</a>
+
 
 
 ### 🌐 Connect With Me
