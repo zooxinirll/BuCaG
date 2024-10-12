@@ -5,6 +5,8 @@
 
 **BuCaG** is an advanced, penetration testing tool designed for security professionals and enthusiasts. This tool is built to facilitate various security assessments, including header vulnerability scanning, Reflected cross-site scripting (RxSS) detection, subdomain enumeration, and more.
 
+![BuCaG](https://github.com/user-attachments/assets/a00be95e-dbf0-41a2-9ecc-a79f7ecdbeeb)
+
 ## Features
 
 - **Header Vulnerability Scanner:** Identifies misconfigurations and security flaws in HTTP headers.
