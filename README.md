@@ -3,7 +3,7 @@
 ![Python Version](https://img.shields.io/pypi/pyversions/your-package?label=Python%20Version)
 
 
-**BuCaG** is an advanced, penetration testing tool designed for security professionals and enthusiasts. This tool is built to facilitate various security assessments, including header vulnerability scanning, Reflected cross-site scripting (RxSS) detection, subdomain enumeration, and more.
+**BuCaG** is an advanced, penetration testing tool designed for security professionals and enthusiasts. This tool is built to facilitate various security assessments, including Missing Header Checks , Reflected cross-site scripting (RxSS) detection, subdomain enumeration, LocalFile inclusion scan and more.
 
 ![BuCaG](https://github.com/user-attachments/assets/a00be95e-dbf0-41a2-9ecc-a79f7ecdbeeb)
 
