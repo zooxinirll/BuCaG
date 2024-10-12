@@ -87,6 +87,9 @@ Run the main script to access the tool's functionalities:
 • lfi.txt : Source From github <a href=https://github.com/coffinxp/lostools/blob/main/payloads/lfi.txt>coffinxp</a>
 
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=zooxinirll/BuCaG&type=Date)](https://star-history.com/#username/repository)
 
 ### 🌐 Connect With Me
 <p align="center"> <a href="https://github.com/zooxinirll" target="_blank"> <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /> </a> <a href="https://www.instagram.com/h3r.10c4lh0st.07?igsh=MTRqcGNsdmN3a2FyaA==" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /> </a></p>
