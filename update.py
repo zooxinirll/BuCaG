@@ -6,7 +6,6 @@ import sys
 import time
 
 GIT_REPO = "https://github.com/zooxinirll/BuCaG.git"
-EXCLUDE_FILE = "update.py"
 
 RED = "\033[91m"
 GREEN = "\033[92m"
@@ -17,8 +16,6 @@ BOLD = "\033[1m"
 
 def clear_directory():
     for item in os.listdir("."):
-        if item == EXCLUDE_FILE:
-            continue
         item_path = os.path.join(".", item)
         if os.path.isfile(item_path):
             os.remove(item_path)
