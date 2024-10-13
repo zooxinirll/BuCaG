@@ -21,11 +21,18 @@ def clear_directory():
             os.remove(item_path)
         elif os.path.isdir(item_path):
             shutil.rmtree(item_path)
+    
+    # Remove the .git folder if it exists
+    if os.path.exists(".git"):
+        shutil.rmtree(".git")
 
 
 def clone_repository():
-    with open(os.devnull, "w") as null_file:
-        subprocess.run(["git", "clone", GIT_REPO, "."], stdout=null_file, stderr=null_file, check=True)
+    try:
+        subprocess.run(["git", "clone", GIT_REPO, "."], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"{RED}Error during git clone: {e}{RESET}")
+        sys.exit(1)
 
 
 def show_spinner(message, duration=5):
