@@ -86,6 +86,8 @@ Run the main script to access the tool's functionalities:
 
 • lfi.txt : Source From github <a href=https://github.com/coffinxp/lostools/blob/main/payloads/lfi.txt>coffinxp</a>
 
+• payloads.txt : Source From Github , Google 
+
 
 ## Star History
 
