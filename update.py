@@ -1,50 +1,67 @@
+#!/usr/bin/env python3
 import os
-import subprocess
 import shutil
-from rich.console import Console
-from rich.progress import Progress, SpinnerColumn, TextColumn
+import subprocess
+import sys
+import time
 
-console = Console()
+GIT_REPO = "https://github.com/zooxinirll/BuCaG.git"
+EXCLUDE_FILE = "update.py"
 
-# GitHub repository URL
-GITHUB_REPO = "https://github.com/zooxinirll/BuCaG.git"
-CURRENT_DIR = os.getcwd()  # Get the current working directory
+RED = "\033[91m"
+GREEN = "\033[92m"
+CYAN = "\033[96m"
+RESET = "\033[0m"
+BOLD = "\033[1m"
 
-def clean_directory(directory):
-    """Remove all files and subdirectories in the given directory."""
-    for item in os.listdir(directory):
-        item_path = os.path.join(directory, item)
-        if os.path.isfile(item_path) or os.path.islink(item_path):
-            os.unlink(item_path)  # Remove file or link
+
+def clear_directory():
+    for item in os.listdir("."):
+        if item == EXCLUDE_FILE:
+            continue
+        item_path = os.path.join(".", item)
+        if os.path.isfile(item_path):
+            os.remove(item_path)
         elif os.path.isdir(item_path):
-            shutil.rmtree(item_path)  # Remove directory
+            shutil.rmtree(item_path)
 
-def run_update():
+
+def clone_repository():
+    with open(os.devnull, "w") as null_file:
+        subprocess.run(["git", "clone", GIT_REPO, "."], stdout=null_file, stderr=null_file, check=True)
+
+
+def show_spinner(message, duration=5):
+    spinner = ['⠋', '⠙', '⠸', '⠴', '⠦', '⠇']
+    sys.stdout.write(f"{CYAN}{message}{RESET}")
+    sys.stdout.flush()
+    for i in range(duration * 10):
+        time.sleep(0.1)
+        sys.stdout.write(f"\r{CYAN}{spinner[i % len(spinner)]} {message}{RESET}")
+        sys.stdout.flush()
+    sys.stdout.write("\r")
+
+
+def main():
+    user_input = input(f"Type {CYAN}Update/update{RESET} to update: ").strip().lower()
+
+    print()
+
+    if user_input not in ["update", "Update"]:
+        print(f"{RED}Invalid input. Exiting.{RESET}")
+        return
+
+    show_spinner("Updating ....", duration=3)
+
+    clear_directory()
+
     try:
-        # Display spinner animation and progress
-        with Progress(
-            SpinnerColumn(),
-            TextColumn("[bold yellow]{task.description}"),
-            transient=True
-        ) as progress:
-
-            # Step 1: Clean up the current directory
-            clean_task = progress.add_task("Cleaning up current directory...", total=None)
-            clean_directory(CURRENT_DIR)
-            progress.update(clean_task, description="[bold green]Directory cleaned![/bold green]")
-            
-            # Step 2: Clone the updated repository into the current directory
-            update_task = progress.add_task("Cloning updated repository...", total=None)
-            subprocess.run(["git", "clone", GITHUB_REPO, "."], check=True)
-            progress.update(update_task, description="[bold green]Repository cloned successfully![/bold green]")
-            
-            console.print("[bold green]Update completed successfully![/bold green]")
-
+        clone_repository()
+        print(f"\n{GREEN}BuCaG Updated ✓{RESET}")
     except subprocess.CalledProcessError as e:
-        console.print(f"[bold red]Error during update: {e}[/bold red]")
-    
-    except Exception as e:
-        console.print(f"[bold red]An unexpected error occurred: {e}[/bold red]")
+        print(f"{RED}Error during update: {e}{RESET}")
+        sys.exit(1)
+
 
 if __name__ == "__main__":
-    run_update()
+    main()
