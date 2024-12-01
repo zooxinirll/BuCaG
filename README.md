@@ -5,8 +5,6 @@
 
 **BuCaG** : Unavailable !
 
-![BuCaG](https://github.com/user-attachments/assets/a00be95e-dbf0-41a2-9ecc-)
-
 ## Requirements
 
 - Python 3.6+
