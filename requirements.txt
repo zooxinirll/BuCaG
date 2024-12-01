@@ -3,4 +3,7 @@ requests
 beautifulsoup4
 rich
 selenium 
-pyfiglet 
+pyfiglet
+alive-progress
+termcolor
+pyfiglet
