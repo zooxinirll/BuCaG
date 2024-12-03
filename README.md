@@ -39,9 +39,9 @@
 
 Run the main script to access the tool's functionalities:
 
-    ```bash
+    
     python3 BuCaG.py
-    ```
+    
 
 ### Main Menu Options
 
