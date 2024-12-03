@@ -2,6 +2,8 @@
 
 ![Python Version](https://img.shields.io/pypi/pyversions/your-package?label=Python%20Version)
 
+![View Count](https://visitor-badge.laobi.icu/badge?page_id=zooxinirll.BuCaG)
+
 
 **BuCaG** : Unavailable !
 
