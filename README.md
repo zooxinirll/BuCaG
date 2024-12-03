@@ -2,9 +2,7 @@
 
 ![Python Version](https://img.shields.io/pypi/pyversions/your-package?label=Python%20Version)
 
-![View Count](https://visitor-badge.laobi.icu/badge?page_id=zooxinirll.BuCaG)
-
-
+![View Count](https://img.shields.io/badge/dynamic/json?color=success&label=Views&query=value&url=https://api.countapi.xyz/hit/zooxinirll.BuCaG)
 **BuCaG** : Unavailable !
 
 ![BuCaG](https://github.com/user-attachments/assets/9af2f170-b03e-4e0b-b6a1-2a9b43bf5a73)
